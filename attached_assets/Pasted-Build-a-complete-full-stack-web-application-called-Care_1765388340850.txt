@@ -1,0 +1,75 @@
+Build a complete full-stack web application called Career Compass - Job & Career Assistant using React.js for the frontend, Node.js/Express for the backend, and MySQL for the database. The application should help college students analyze job descriptions and evaluate their job readiness. Implement the following features:
+
+Frontend (React.js):
+
+A responsive homepage where students can:
+
+Paste a job description.
+
+Upload or paste their resume.
+
+Display an intelligent match score (e.g., "Strong Match - 8/10") with visual representation (progress bar or star rating).
+
+Show a gap analysis, e.g., "This role requires 'Docker' and 'AWS' but your resume doesn't mention these."
+
+Offer one actionable tip to improve their application.
+
+Support a chat-style input for natural language queries like:
+
+"What skills should I learn for data science roles?"
+
+"Am I ready for frontend developer positions?"
+
+Create pages/components for: Dashboard, Job Analysis, Gap Analysis, Recommendations, and a Q&A chat section.
+
+Backend (Node.js / Express):
+
+Implement REST APIs to handle:
+
+Resume upload and parsing.
+
+Job description analysis.
+
+Skill matching and scoring.
+
+Gap analysis computation.
+
+Saving user history and queries to MySQL.
+
+Integrate a simple AI/ML-based matching engine (can use pre-trained models or a keyword-based scoring algorithm).
+
+Implement endpoints for:
+
+/api/analyze-job (POST: job description + resume → returns match score, gap analysis, tips)
+
+/api/query (POST: natural language query → returns response)
+
+/api/history (GET/POST: user job analyses)
+
+Database (MySQL):
+
+Create tables for:
+
+Users (id, name, email, password)
+
+Job_Analyses (id, user_id, job_description, resume_text, match_score, gap_analysis, recommendation, created_at)
+
+Skills (id, name)
+
+Store user queries and their results for future reference.
+
+Other Requirements:
+
+Use React Router for navigation.
+
+Use Axios for API calls from frontend to backend.
+
+Include basic authentication (login/register).
+
+Provide a clean, modern UI (preferably using Material-UI or TailwindCSS).
+
+Comment the code for clarity.
+
+Make the project ready to deploy on Replit or similar platforms.
+
+Please generate the complete folder structure with all frontend and backend files, including package.json, React components, Node.js server, and MySQL table creation scripts.
